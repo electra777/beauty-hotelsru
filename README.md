@@ -1,1 +1,1 @@
-# beauty-hotelsru
+# beauty-hotels.ru
