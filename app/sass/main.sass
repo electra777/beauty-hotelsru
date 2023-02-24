@@ -75,7 +75,6 @@ b, strong
 	background: url('../img/armchair_bg.jpg') no-repeat
 	// background: url('../img/armchair_bg.jpg') 0 0/100% auto no-repeat
 	height: 604px
-	margin-bottom: 80px
 	&__info
 		max-width: 308px
 		padding-top: 192px
@@ -96,6 +95,63 @@ b, strong
 		border-color: $white
 		color: $white
 		width: 170px
+
+.special-offers
+	background-color: $gray
+	padding-top: 80px
+	padding-bottom: 100px
+	&__title
+		font-family: RobotoBold, sans-serif
+		font-size: 24px
+		font-weight: 700
+		line-height: 28px
+		color: $text
+		margin-bottom: 38px
+	&__row
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		gap: 30px
+		position: relative
+	&__row:after
+		content: ''
+		position: absolute
+		width: 189px
+		height: 61px
+		right: 45px
+		top: -78px
+		background: url('../img/car.png')
+	&__cart
+		max-width: 255px
+		background-color: $white
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		padding: 25px 30px
+	&__img
+		margin-bottom: 20px
+	&__discription
+		text-align: center
+		font-size: 14px
+		font-weight: 400
+		line-height: 20px
+		color: #333333
+		margin-bottom: 20px
+	&__price
+		font-family: RobotoMedium, sans-serif
+		text-align: center
+		font-size: 21px
+		font-weight: 500
+		line-height: 25px
+		letter-spacing: 0.05em
+		color: $text
+		margin-bottom: 20px
+	&__btn
+		background-color: $accent
+		color: $white
+		width: 130px
+		height: 35px
+		padding: 9px 25px
 
 @import "../blocks/header/header.sass"
 @import "../blocks/top-nav/top-nav.sass"
