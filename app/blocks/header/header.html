@@ -1,7 +1,17 @@
-<header class="header @@class">
-    <div class="header__inner ">
-        @@include('../top-nav/top-nav.html')
+<header class="header">
+    @@include('../top-nav/top-nav.html')
 
+    <div class="header__inner">
+        <div class="header__main container">
+            @@include('../logo/logo.html')
+            <div class="header__info">
+                <a href="#" class="header__phone">8 (812) 123-45-67</a>
+                <a href="#" class="header__btn button">Обратный звонок</a>
+            </div>
+        </div>
     </div>
+
+    @@include('../nav/nav.html')
+
 
 </header>
