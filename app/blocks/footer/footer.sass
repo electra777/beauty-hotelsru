@@ -1,2 +1,85 @@
 .footer
-    
+
+  &__main
+
+  &__row
+    display: flex
+    padding: 37px 0
+  &__social
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 20px
+    list-style: none
+    max-width: 240px
+  &__social-item
+    height: 45px
+  &__social-link
+    display: inline-block
+    width: 45px
+    height: 45px
+    border: 2px solid $accent
+    border-radius: 50%
+    position: relative
+  &__social-link::before
+    content: ''
+    position: absolute
+    right: 0
+    left: 0
+    top: 0
+    bottom: 0
+    margin: auto
+  &__social-link_youtube::before
+    background: url('../../img/youtube.svg') no-repeat
+    width: 22px
+    height: 15px
+  &__social-link_vk::before
+    background: url('../../img/vk.svg') no-repeat
+    width: 28px
+    height: 15px
+  &__social-link_facebook::before
+    background: url('../../img/facebook.svg') no-repeat
+    width: 20px
+    height: 20px
+  &__social-link_instagram::before
+    background: url('../../img/instagram.svg') no-repeat
+    width: 22px
+    height: 22px
+  &__address
+    text-decoration: none
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $text
+    font-size: 16px
+    font-weight: 400
+    line-height: 19px
+    margin-right: 105px
+    margin-left: auto
+  &__info
+    display: flex
+    gap: 40px
+    align-items: center
+  &__phone
+    text-decoration: none
+    color: $text
+    font-size: 16px
+    font-weight: 400
+    line-height: 19px
+  &__bottom
+    background-color: $gray
+  &__bottom-row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 64px
+  &__copyright
+    font-size: 12px
+    font-weight: 400
+    line-height: 14px
+    color: #828282
+  &__privacy-policy
+    text-decoration: none
+    font-size: 12px
+    font-weight: 400
+    line-height: 14px
+    color: #828282
