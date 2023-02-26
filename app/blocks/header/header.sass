@@ -3,14 +3,22 @@
   &__inner
     height: 120px
     border-bottom: 1px solid $gray
+    @media (max-width: 680px)
+      height: auto
   &__main
     display: flex
     justify-content: space-between
     align-items: center
+    @media (max-width: 680px)
+      flex-direction: column
+      margin-bottom: 20px
   &__info
     display: flex
     gap: 40px
     align-items: center
+    @media (max-width: 390px)
+      flex-direction: column
+      gap: 20px
   &__phone
     text-decoration: none
     color: $text

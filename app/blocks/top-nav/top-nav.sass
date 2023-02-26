@@ -2,6 +2,8 @@
   height: 50px
   width: 100%
   background-color: $gray
+  @media (max-width: 680px)
+    overflow-x: auto
   &__list
     display: flex
     gap: 30px
@@ -9,8 +11,8 @@
     align-items: center
     height: 100%
     list-style: none
-  &__item
-
+    @media (max-width: 500px)
+      width: 470px
   &__link
     text-decoration: none
     color: #333333

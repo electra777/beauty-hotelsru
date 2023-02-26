@@ -57,6 +57,8 @@ b, strong
 	width: 100%
 	margin: 0 auto
 	height: 100%
+	@media (max-width: 1200px)
+		padding: 0 25px
 
 .button
 	display: inline-block
@@ -73,11 +75,15 @@ b, strong
 
 .promotion
 	background: url('../img/armchair_bg.jpg') no-repeat
-	// background: url('../img/armchair_bg.jpg') 0 0/100% auto no-repeat
+	background-position: center center
 	height: 604px
+	@media (max-width: 700px)
+		background-position: 59% 50%
 	&__info
 		max-width: 308px
 		padding-top: 192px
+		@media (max-width: 700px)
+			text-shadow: 1px 1px 2px $text
 	&__title
 		font-family: RobotoBold, sans-serif
 		font-size: 48px
@@ -95,11 +101,16 @@ b, strong
 		border-color: $white
 		color: $white
 		width: 170px
+		@media (max-width: 700px)
+			background-color: $accent
+			text-shadow: none
 
 .special-offers
 	background-color: $gray
 	padding-top: 80px
 	padding-bottom: 100px
+	@media (max-width: 780px)
+		padding-bottom: 70px
 	&__title
 		font-family: RobotoBold, sans-serif
 		font-size: 24px
@@ -109,7 +120,7 @@ b, strong
 		margin-bottom: 38px
 	&__row
 		display: grid
-		grid-template-columns: repeat(4, 1fr)
+		grid-template-columns: repeat(auto-fit, minmax(255px, 1fr))
 		gap: 30px
 		position: relative
 	&__row::after
@@ -120,8 +131,9 @@ b, strong
 		right: 45px
 		top: -78px
 		background: url('../img/car.png') no-repeat
+		@media (max-width: 620px)
+			display: none
 	&__cart
-		max-width: 255px
 		background-color: $white
 		display: flex
 		flex-direction: column
@@ -157,13 +169,19 @@ b, strong
 .gifts-info
 	background-color: $gray
 	padding-bottom: 133px
+	@media (max-width: 780px)
+		padding-bottom: 70px
 	&__row
 		display: grid
-		grid-template-columns: repeat(2, 1fr)
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
 		gap: 30px
+		@media (max-width: 390px)
+			grid-template-columns: 1fr
 	&__col
 		background-color: $accent
 		padding: 35px 40px
+		@media (max-width: 390px)
+			padding: 20px
 	&__col:first-of-type
 		position: relative
 	&__col:first-of-type::after
@@ -174,6 +192,12 @@ b, strong
 		background: url('../img/envelope.svg') no-repeat
 		right: 45px
 		top: 36px
+		@media (max-width: 1000px)
+			display: none
+		@media (max-width: 779px)
+			display: block
+		@media (max-width: 530px)
+			display: none
 	&__form
 		max-width: 250px
 		position: relative

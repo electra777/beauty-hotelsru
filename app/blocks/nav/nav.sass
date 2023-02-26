@@ -1,5 +1,6 @@
 .nav
-
+  @media (max-width: 750px)
+    overflow-x: auto
   &__list
     list-style: none
     height: 80px
@@ -7,6 +8,8 @@
     gap: 40px
     justify-content: center
     align-items: center
+    @media (max-width: 750px)
+      width: 700px
   &__item
 
   &__link
